@@ -22,26 +22,27 @@ class _HomePageState extends State<HomePage> {
             child: SwipeableButtonView(
           buttonText: 'Slide to Pay',
           buttontextstyle: const TextStyle(fontSize: 25, color: Colors.white),
-          buttonWidget: const Icon(
-            Icons.arrow_forward_ios_rounded,
-            color: Colors.grey,
-          ),
+          buttonWidget:
+              const Icon(Icons.arrow_forward_ios_rounded, color: Colors.grey),
           activeColor: const Color(0xFF009C41),
-          isFinished: isFinished,
           onWaitingProcess: () {
+            // - - -
+            // Amount of time the circular progress
+            // indicator spins before navigating to next page
+            //- - -
             Future.delayed(const Duration(seconds: 2),
                 () => setState(() => isFinished = true));
           },
+          isFinished: isFinished,
           onFinish: () async {
+            // - - - Navigate to confirmation page - - -
             await Navigator.push(
                 context,
                 PageTransition(
                     type: PageTransitionType.fade,
                     child: const ConfirmationPage()));
-
-            setState(() {
-              isFinished = false;
-            });
+            // - - - Reset isFinished variable  - - -
+            setState(() => isFinished = false);
           },
         )),
       ),
