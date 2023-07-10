@@ -49,7 +49,9 @@ swipeable_button_view: ^0.0.2
 
 ## Demo
 
-https://github.com/vijayinyoutube/swipeable_btn_view_app/assets/58719230/7e102584-415f-4a10-bf08-436ae31430d3
+
+https://github.com/vijayinyoutube/swipeable_btn_view_app/assets/58719230/43cc8e44-db00-4ae9-ac51-b9c734d4eefe
+
 
 
 ## License
