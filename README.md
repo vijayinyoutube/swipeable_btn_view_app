@@ -41,6 +41,11 @@ To know more awesome content about Flutter.,
 
 Visit my channel 👉 : https://www.youtube.com/c/vijaycreationsflutter
 
+## Dependencies
+```pubspec.yaml
+swipeable_button_view: ^0.0.2
+```
+
 
 ## Demo
 
